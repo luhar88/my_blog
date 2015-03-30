@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<table>
+    Individual Blogs
+    {% for article in blog %}
+    <tr>
+        <td>Title:</td>
+        <td>{{ article.title }}</td>
+    </tr>
+    <tr>
+        <td>Content:</td>
+        <td>{{ article.content }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
